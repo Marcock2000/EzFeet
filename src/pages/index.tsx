@@ -51,7 +51,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="container mx-auto flex min-h-screen flex-col gap-12">
-        <h1 className="mt-12 pl-4 text-2xl text-white font-serif text-justify">Selling your feet pics can't get any easier</h1>
+        <h1 className="mt-12 pl-4 text-2xl text-white font-serif text-center px-5">Selling your feet pics can't get any easier</h1>
         <div className="flex flex-col gap-4 overflow-y-auto items-center" >
           {listings?.data?.map((listing) => (
             <Card key={listing.id} listing={listing} />
