@@ -37,8 +37,10 @@ const ListingView: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col gap-12 bg-gray-800">
-        <div className="container mx-auto flex flex-col gap-12 text-gray-200 text-center">
+        <div className=" mt-20 card bg-gray-700 mx-auto flex flex-col gap-12 text-gray-200 text-center font-serif items-center ">
           <h1 className="mt-12 text-4xl">{listingItem.name}</h1>
+          <figure ><img className="rounded-lg" src={listingItem.imageUrl}/> 
+          </figure>
           <p>{listingItem.description}</p>
           <p>$ {listingItem.price}</p>
 
