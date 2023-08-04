@@ -1,0 +1,29 @@
+datasource db {
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Listing {
+    id          String    @id @default(cuid())
+    userId      String
+    createdAt   DateTime  @default(now())
+    updatedAt   DateTime  @updatedAt
+    name        String
+    description String
+    price       Float
+    imageUrl    String    // New field to store the image URL or file path
+    message     Message[]
+}
+
+model Message {
+    id           String  @id @default(cuid())
+    fromUser     String
+    fromUserName String
+    listingId    String
+    message      String
+    listing      Listing @relation(fields: [listingId], references: [id])
+}
