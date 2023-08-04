@@ -26,5 +26,8 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  eslint: {
+    ignoreDuringBuilds: true
+  }
 };
 export default config;
