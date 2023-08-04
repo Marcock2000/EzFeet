@@ -37,7 +37,7 @@ const ListingView: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col gap-12 bg-gray-800">
-        <div className="container mx-auto flex flex-col gap-12">
+        <div className="container mx-auto flex flex-col gap-12 text-gray-200 text-center">
           <h1 className="mt-12 text-4xl">{listingItem.name}</h1>
           <p>{listingItem.description}</p>
           <p>$ {listingItem.price}</p>
@@ -59,7 +59,7 @@ const ListingView: NextPage = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  className="mb-2 block text-sm font-medium text-gray-200"
                 >
                   Message
                 </label>
@@ -69,7 +69,7 @@ const ListingView: NextPage = () => {
                   {...register("message", { required: true })}
                 />
               </div>
-              <button className="inline-flex items-center rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <button className="btn btn-ghost flex items-center rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Send Message
               </button>
             </form>
