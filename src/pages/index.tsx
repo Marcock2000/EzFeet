@@ -9,7 +9,7 @@ function Card({ listing }: { listing: Listing }) {
   return (
       
     <div className="card lg:card-side bg-base-100 shadow-xl w-3/4  h-1/2" style={{ maxHeight: '40vh' }}> 
-    <figure className= "lg: w-1/3" >
+    <figure className= "lg:w-1/3" >
        <img src={listing.imageUrl} alt="Movie" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
 
     </figure>
