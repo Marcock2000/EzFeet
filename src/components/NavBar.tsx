@@ -5,7 +5,7 @@ export function NavBar() {
   const user = useUser();
 
   return (
-    <div className="navbar bg-slate-200 rounded-b-xl">
+    <div className="navbar bg-slate-200 rounded-b-xl ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
