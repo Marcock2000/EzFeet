@@ -8,6 +8,8 @@
   import { UploadButton, UploadDropzone } from "~/utils/uploadthing";
   import { useState } from "react";
   import { string } from "zod";
+  import "@uploadthing/react/styles.css";
+
 
   type SellItemForm = {
     name: string;
